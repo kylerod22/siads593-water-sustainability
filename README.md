@@ -9,5 +9,9 @@ test 5
 Hello
 
 
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+test
 git config --global user.name "John Doe"  
 git config --global user.email johndoe@example.com
