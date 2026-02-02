@@ -1,6 +1,10 @@
 import pandas as pd
 
-def primary_dataset(landsat='landsat_features_training.csv', terraclimate='terraclimate_features_training.csv', wq='water_quality_training_dataset.csv', col='Sample Date'):
+landsat_path = 'data/ey_ai_datasets/landsat_features.csv'
+terraclimate_path = 'data/ey_ai_datasets/terraclimate_features.csv'
+wq_path = 'data/ey_ai_datasets/water_quality_dataset.csv'
+
+def primary_dataset(landsat=landsat_path, terraclimate=terraclimate_path, wq=wq_path, col='Sample Date'):
     '''
     input: 3 primary datasets (CSV files) from EY's Water Quality Prediction: Benchmark Notebook
     return: merged pandas dataframe with added bin column (monthly) joined on GPS coordinates and date

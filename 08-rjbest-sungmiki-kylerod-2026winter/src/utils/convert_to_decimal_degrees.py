@@ -7,7 +7,7 @@ import pandas as pd
 
 def dms2dd(degrees, minutes, seconds, direction):
     dd = float(degrees) + float(minutes)/60 + float(seconds)/(3600)
-    if direction == 'E' or direction == 'S': # East and south are negative
+    if direction == 'W' or direction == 'S': # West and south are negative
         dd *= -1
     return dd
 
