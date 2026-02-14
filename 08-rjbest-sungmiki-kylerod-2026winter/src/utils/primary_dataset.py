@@ -1,8 +1,8 @@
 import pandas as pd
 
-landsat_path = 'data/ey_ai_datasets/landsat_features.csv'
-terraclimate_path = 'data/ey_ai_datasets/terraclimate_features.csv'
-wq_path = 'data/ey_ai_datasets/water_quality_dataset.csv'
+landsat_path = 'data/water_quality_samples_dataset/landsat_features.csv'
+terraclimate_path = 'data/water_quality_samples_dataset/terraclimate_features.csv'
+wq_path = 'data/water_quality_samples_dataset/water_quality_dataset.csv'
 
 def primary_dataset(landsat=landsat_path, terraclimate=terraclimate_path, wq=wq_path, col='Sample Date'):
     '''
